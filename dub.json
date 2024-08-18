@@ -1,0 +1,30 @@
+{
+	"authors": [
+		"vf"
+	],
+	"copyright": "Copyright © 2024, vf",
+	"description": "A minimal D application.",
+	"license": "proprietary",
+	"configurations": [
+		{
+			"name": "linux",
+			"platforms"      : ["linux"],
+			"targetType"     : "executable",
+			"dependencies": {
+				"bindbc-common" : {"path":"deps/bindbc-common"},
+				"bindbc-loader" : {"path":"deps/bindbc-loader"},
+				"bindbc-opengl" : {"path":"deps/bindbc-opengl"},
+				"x11"           : {"path":"deps/x11"},
+				"xau"           : {"path":"deps/xau"},
+				"xcb-d"         : {"path":"deps/xcb-d"},
+				"glx-d"         : {"path":"deps/glx-d"},
+				"select"        : {"path":"deps/select"},
+			},			
+			"versions" : ["GL_AllowDeprecated", "GL_ES_2"],
+		},
+	],
+	"subConfigurations": {
+		"bindbc-opengl": "dynamicBC"
+	},
+	"name": "vf4"
+}

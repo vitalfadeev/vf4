@@ -1,0 +1,13 @@
+{
+	"fileVersion": 1,
+	"versions": {
+		"bindbc-common": {"path":"deps/bindbc-common"},
+		"bindbc-loader": {"path":"deps/bindbc-loader"},
+		"bindbc-opengl": {"path":"deps/bindbc-opengl"},
+		"glx-d": {"path":"deps/glx-d"},
+		"select": {"path":"deps/select"},
+		"x11": {"path":"deps/x11"},
+		"xau": {"path":"deps/xau"},
+		"xcb-d": {"path":"deps/xcb-d"}
+	}
+}
